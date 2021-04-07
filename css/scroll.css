@@ -1,1 +1,49 @@
 @charset "UTF-8";
+
+/*////////////////*/
+/*////////////////*/
+/* CONFIG SCROLL */
+/* limitando largura do box */
+::-webkit-scrollbar {
+    width: 8px;
+    background: #e3e0d6;
+  }
+  /* configurando scroll */
+  ::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 0.1);
+  }
+  ::-webkit-scrollbar-thumb {
+    border-radius: 20px;
+    background: #4169e1;
+  }
+  /*////////////////*/
+  /* Buttons */
+  ::-webkit-scrollbar-button:single-button {
+    background-color: #bbbbbb;
+    display: block;
+    border-style: solid;
+    height: 4px;
+    width: 16px;
+  }
+  /* Up */
+  ::-webkit-scrollbar-button:single-button:vertical:decrement {
+    border-width: 0 8px 8px 8px;
+    border-color: transparent transparent #bbbbbb transparent;
+    /* border-color: transparent transparent #555555 transparent; */
+  }
+
+  ::-webkit-scrollbar-button:single-button:vertical:decrement:hover {
+    border-color: transparent transparent transparent transparent;
+    /* border-color: transparent transparent #777777 transparent; */
+  }
+
+  /* Down */
+  ::-webkit-scrollbar-button:single-button:vertical:increment {
+    border-width: 8px 8px 0 8px;
+    border-color: #bbbbbb transparent transparent transparent;
+    /* border-color: #555555 transparent transparent transparent; */
+  }
+
+  ::-webkit-scrollbar-button:vertical:single-button:increment:hover {
+    border-color: transparent transparent transparent transparent;
+  }
